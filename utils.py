@@ -25,7 +25,7 @@ lag_range_hour = 24*6
 lag_range_min = 12*12   #3
 
 lag_day = 365*2
-lag_hour = 24*60
+lag_hour = 24*30
 lag_min = 12*24*7
 
 symbol = 'CL=F'
