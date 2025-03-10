@@ -58,7 +58,7 @@ def read_data(tr, interval):
 	except:
 #		df_history['date'] = pd.to_datetime(df_history['date'], format="%Y-%m-%d %H:%M:%S", utc=True)
 
-    	df_history['date'] = pd.to_datetime(df_history['date'], format="mixed", utc=True)
+		df_history['date'] = pd.to_datetime(df_history['date'], format="mixed", utc=True)
 
 
 
@@ -67,7 +67,7 @@ def read_data(tr, interval):
 	except:
 #		df_forecast['date'] = pd.to_datetime(df_forecast['date'], format="%Y-%m-%d %H:%M:%S", utc=True)
 
-    	df_forecast['date'] = pd.to_datetime(df_forecast['date'], format="mixed", utc=True)
+		df_forecast['date'] = pd.to_datetime(df_forecast['date'], format="mixed", utc=True)
 
 
 	df_temp1 = pd.merge(df_history[['date', 'fact']], df_forecast[['date', 'forecast']], on='date', how='left')
